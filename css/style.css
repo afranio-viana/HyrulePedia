@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'The_Wild_Breath_of_Zelda';
+    src: url('../fonts/The_Wild_Breath_of_Zelda.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Triforce';
+    src: url('../fonts/Triforce.ttf') format('truetype');
+}
+body{
+    background-color: #5db060;
+}
+
+.header_generic{
+    color: azure;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+
+}
+
+.header_generic .logo{
+    width: 11%;
+    margin-left: 0%;
+}
+.header_generic .logo img{
+    width: 100%;
+    border: solid 1px black;
+    background-color: #f3f3f3;
+    border-radius: 100%;
+}
+
+.nav_generic{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_generic ul {
+    width: 100%;
+    list-style: none;
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.nav_generic ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Triforce';
+    font-size:x-large;
+}
+
+.nav_generic ul li a:hover{
+    font-family: 'The_Wild_Breath_of_Zelda';
+    font-size:xx-large;
+    text-decoration: underline #fff;
+    text-shadow: -1px -1px 0px #cf2e2e, 
+    -1px 1px 0px #cf2e2e,                    
+     1px -1px 0px #cf2e2e,                  
+     1px 0px 0px #cf2e2e;
+}
+.header_generic form{
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main{
+    background-color: #fff;
+}
+
+.main .monster{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+}
+
+.main .monster .card_monster{
+    border: solid 1px #5db060;
+    height: 80%;
+    margin-top: 2vh;
+    padding-bottom: 2vh;
+    margin-bottom: 2vh;
+    box-shadow: 0px 0px 15px 10px #d3dd79
+}
+
+.main .monster .card_monster:hover{
+    box-shadow: 0px 0px 15px 10px #cf2e2e
+}
+.main .monster .card_monster .link_monster{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.main .monster .card_monster .link_monster img{
+    width: 60%;
+}
+.main .monster .card_monster h1{
+    color: #cf2e2e;
+    font-family: Triforce;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+.main .monster .card_monster:hover h1{
+    font-family:The_Wild_Breath_of_Zelda ;
+    background-color: #5db060;
+    color: #cf2e2e;
+    text-shadow: -1px -1px 0px #fff, 
+    -1px 1px 0px #fff,                    
+     1px -1px 0px #fff,                  
+     1px 0px 0px #fff;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 20vw;
+    top: 40vh;
+    width: 55vw;
+    height: auto;
+    overflow: auto;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 10px #1690e2
+}
+
+.modal .content-modal{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.modal .content-modal .img-modal{
+    width: 30%;
+    height: auto; 
+
+}
+
+.modal .content-modal .img-modal img{
+    width: 100%;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+.modal .content-modal .container-modal{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.modal .content-modal .container-modal .close-modal{
+    width: 100%;
+    text-align: right;
+}
+
+.modal .content-modal .container-modal .close-modal h3{
+    color: #cf2e2e
+}
+
+.modal .content-modal .container-modal .close-modal h3:hover{
+    cursor: pointer;
+}
+
+.modal .content-modal .container-modal .name-monster{
+    text-align: center;
+    width: 100%;
+    font-family: Triforce;
+    color:#cf2e2e
+}
+
+.modal .content-modal .container-modal .description-monster{
+    text-align: justify;
+}
+
+
+footer{
+    text-align: center;
+    color: #fff;
+    font-family: 'Arial';
+    font-size:x-large;
+    text-decoration: underline #fff;
+}
